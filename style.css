@@ -1,12 +1,12 @@
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  background: linear-gradient(135deg, #0b1526 0%, #1e2a47 99%, #12203a 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #fff;
+  color: #a3c4f3;
   overflow: hidden;
 }
 
@@ -20,13 +20,13 @@ h1 {
   font-weight: 900;
   letter-spacing: 0.05em;
   animation: pulse 2s infinite;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+  text-shadow: 0 0 10px #3a5fcd, 0 0 20px #3a5fcdcc;
   margin-bottom: 20px;
 }
 
 .hearts {
   font-size: 3rem;
-  color: #ff0048;
+  color: #3a5fcd;
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -53,11 +53,11 @@ h1 {
 @keyframes pulse {
   0%, 100% {
     transform: scale(1);
-    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    text-shadow: 0 0 10px #3a5fcd, 0 0 20px #3a5fcdcc;
   }
   50% {
     transform: scale(1.1);
-    text-shadow: 4px 4px 10px rgba(255, 0, 80, 0.7);
+    text-shadow: 0 0 25px #6689f6, 0 0 50px #6689f6dd;
   }
 }
 
