@@ -1,12 +1,12 @@
 body {
   margin: 0;
   height: 100vh;
-  background: linear-gradient(135deg, #0b1526 0%, #1e2a47 99%, #12203a 100%);
+  background: linear-gradient(135deg, #04070d 0%, #16223d 99%, #0c1526 100%);
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #a3c4f3;
+  color: #b7d2f8;
   overflow: hidden;
 }
 
