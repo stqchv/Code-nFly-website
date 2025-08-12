@@ -1,0 +1,36 @@
+<form id="signup-form">
+    <input type="text" name="name" placeholder="Imię i nazwisko" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <button type="submit">Zapisz się i zapłać</button>
+  </form>
+
+  <script>
+    document.getElementById('signup-form').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      
+      const formData = {
+        name: e.target.name.value,
+        email: e.target.email.value
+      };
+
+      const res = await fetch('/.netlify/functions/create-checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      const { url } = await res.json();
+      window.location.href = url;
+    });
+  </script>
+
+  <form name="zapis-na-kurs" method="POST" data-netlify="true" action="/success.html">
+    <input type="hidden" name="form-name" value="zapis-na-kurs">
+    <p>
+      <label>Imię: <input type="text" name="imie" required></label>
+    </p>
+    <p>
+      <label>Email: <input type="email" name="email" required></label>
+    </p>
+    <button type="submit">Zapisz się</button>
+  </form>
