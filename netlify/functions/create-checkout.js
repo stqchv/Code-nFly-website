@@ -16,8 +16,8 @@ exports.handler = async (event) => {
         quantity: 1
       }],
       customer_email: email,
-      success_url: 'https://twojadomena.netlify.app/sukces',
-      cancel_url: 'https://twojadomena.netlify.app/anulowano'
+      success_url: 'https://codenfly.netlify.app/sukces',
+      cancel_url: 'https://codenfly.netlify.app/anulowano'
     });
 
     return {
