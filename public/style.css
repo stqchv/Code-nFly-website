@@ -95,8 +95,8 @@ p {
 .stats {
   display: flex;
   gap: 40px;
-  font-weight: 700;
-  font-size: 1rem;
+  font-weight: 600;
+  font-size: 1.4rem;
 }
 
 .stats div {
@@ -105,16 +105,17 @@ p {
 
 .stats span {
   font-weight: 400;
-  color: #777;
+  color: #808080;
   display: block;
+  font-size: .9rem;
   margin-top: 4px;
 }
 
 .image-container {
   flex: 1 1 400px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1); */
   max-width: 100%;
 }
 
