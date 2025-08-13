@@ -7,6 +7,19 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Code'nfly Logo" />
+      <span>Code'nfly</span>
+    </div>
+    <nav>
+      <a href="#kurs">Kurs</a>
+      <a href="#program">Program</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+  </header>
+
   <section class="hero">
     <div class="container">
       <div class="content">
@@ -20,7 +33,7 @@
         <div class="stats">
           <div><strong>50+</strong><br /><span>Kursantów</span></div>
           <div><strong>8 godzin</strong><br /><span>Czas kursu</span></div>
-          <div><strong>⭐ 4.9</strong><br /><span>Oceny</span></div>
+          <div><strong>⭐ 4.9</strong><br /><span>Ocena</span></div>
         </div>
       </div>
       <div class="image-container">
@@ -29,30 +42,53 @@
     </div>
   </section>
 
-  <form id="signup-form">
-    <input type="text" name="name" placeholder="Imię i nazwisko" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <!-- <button type="submit">Zapisz się i zapłać</button> -->
-  </form>
+  <section class="why-us">
+    <div class="why-us__title">Czego Się Nauczysz?</div>
+    <div class="why-us__subtitle">
+        Zdobywaj praktyczne doświadczenie w najnowszych technologiach dronów i technikach programowania.
+    </div>
+    <div class="why-us__cards">
+        
+        <div class="why-us__card">
+            <!-- Heroicon: Code -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="why-us__icon" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="40" height="40">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+            </svg>
+            <h3 class="why-us__card-title">Praktyczne Kodowanie</h3>
+            <p class="why-us__card-text">Learn by coding real drone applications using Python and industry-standard frameworks</p>
+        </div>
 
-  <script>
-    document.getElementById('signup-form').addEventListener('submit', async function(e) {
-      e.preventDefault();
-      
-      const formData = {
-        name: e.target.name.value,
-        email: e.target.email.value
-      };
+        <div class="why-us__card">
+            <!-- Heroicon: Device Desktop -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="why-us__icon" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="40" height="40">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17h4.5m-2.25 0V7m0 10v2h-4.5a.75.75 0 01-.75-.75V17h6z" />
+            </svg>
+            <h3 class="why-us__card-title">Drony w Praktyce</h3>
+            <p class="why-us__card-text">Work with actual drones and simulators to test your programming skills</p>
+        </div>
 
-      const res = await fetch('/.netlify/functions/create-checkout', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      });
+        <div class="why-us__card">
+            <!-- Heroicon: Academic Cap -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="why-us__icon" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="40" height="40">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zM12 14v7M12 14L3 9" />
+            </svg>
+            <h3 class="why-us__card-title">Profesjonalna Pomoc</h3>
+            <p class="why-us__card-text">Learn from industry professionals with years of drone development experience</p>
+        </div>
 
-      const { url } = await res.json();
-      window.location.href = url;
-    });
-  </script>
+        <div class="why-us__card">
+            <!-- Heroicon: Badge Check -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="why-us__icon" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="40" height="40">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m1 2a9 9 0 11-8-8 9 9 0 018 8z" />
+            </svg>
+            <h3 class="why-us__card-title">Certyfikat Ukończenia</h3>
+            <p class="why-us__card-text">Earn a recognized certificate upon successful completion of the course</p>
+        </div>
+
+
+    </div>
+    </section>
+
+
 </body>
 </html>
