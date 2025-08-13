@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* font-family: 'Anonymous Pro'; */
 }
 
 body {
@@ -34,7 +35,7 @@ header {
 }
 
 .logo img {
-  height: 60px;
+  height: 45px;
   margin-right: 10px;
 }
 
@@ -267,5 +268,16 @@ p {
   .why-us__card {
     width: 80%;
     max-width: 300px;
+  }
+  header nav {
+    display: none;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .logo {
+    margin: 0;
   }
 }
