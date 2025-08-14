@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setTimeout(() => {
     loader.classList.add("hide");
-  }, 3000);
+  }, 1200);
 
   loader.addEventListener("transitionend", () => {
     loader.remove();
