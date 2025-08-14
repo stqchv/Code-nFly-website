@@ -239,6 +239,99 @@ p {
   line-height: 1.6;
 }
 
+/* === START NOW === */
+.pricing {
+  text-align: center;
+  padding: 120px 20px;
+  background: #f8f8f8;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.pricing__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.pricing__subtitle {
+  color: #555;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.pricing__card {
+  display: inline-block;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid #e5e7eb;
+  max-width: 400px;
+}
+
+.pricing__course-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.pricing__course-subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.pricing__price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pricing__price span {
+  font-size: 1rem;
+  color: #666;
+}
+
+.pricing__features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px;
+  text-align: left;
+}
+
+.pricing__features li {
+  padding-left: 25px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.pricing__features li::before {
+  content: "✔";
+  color: #22c55e;
+  position: absolute;
+  left: 0;
+}
+
+.pricing__button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  transition: background 0.3s ease;
+}
+
+.pricing__button:hover {
+  background: #333;
+}
+
+.pricing__guarantee {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+
 
 
 /* ======= Responsive ======= */
@@ -281,7 +374,7 @@ p {
     margin: 0;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   p {
