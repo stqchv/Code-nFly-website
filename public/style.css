@@ -202,10 +202,9 @@ p {
 }
 
 .why-us__title {
-  font-size: 2.25em; /* lekko większy nagłówek */
-  font-weight: 800;
-  color: #121213;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
 .why-us__subtitle {
@@ -300,7 +299,7 @@ p {
 }
 
 .pricing__course-subtitle {
-  color: #666;
+  color: #9b9b9b;
   margin-bottom: 20px;
 }
 
